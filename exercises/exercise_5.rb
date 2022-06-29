@@ -8,3 +8,11 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+@total_revenue = Store.sum(:annual_revenue)
+
+# p "total revenue: #{@total_revenue}"
+
+@successful_stores = Store.where("annual_revenue < 1000000").count
+
+p @successful_stores
