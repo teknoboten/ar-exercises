@@ -9,4 +9,4 @@ puts "----------"
 @store3 = Store.find_by(id: 3)
 @store3.destroy
 
-p Store.all.count
+p "total store: #{Store.all.count}"
